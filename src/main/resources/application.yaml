@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: AirBnbApp
+
+  datasource:
+    url: jdbc:postgresql://localhost:8000/AirBnbDb
+    username: testUser
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: Asia/Kolkata
